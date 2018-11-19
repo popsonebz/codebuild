@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+     - echo Entering install phase...
+     - apt-get update -y
+
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+      - chmod gradlew
+
+  build:
+    commands:
+     - echo Build started on `date`
+     - gradle build
+artifacts:
+  files:
+    - 'build/libs/*.jar'
