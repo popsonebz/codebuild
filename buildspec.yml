@@ -4,7 +4,9 @@ phases:
   install:
     commands:
      - echo Entering install phase...
+     - add-apt-repository ppa:cwchien/gradle
      - apt-get update -y
+     - apt upgrade gradle
 
   pre_build:
     commands:
