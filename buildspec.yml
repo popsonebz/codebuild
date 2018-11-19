@@ -9,7 +9,7 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-      - chmod gradlew
+      - chmod +x gradlew
 
   build:
     commands:
