@@ -16,4 +16,4 @@ phases:
      - gradle build
 artifacts:
   files:
-    - 'build/libs/*.jar'
+    - build/libs/dms.jar
