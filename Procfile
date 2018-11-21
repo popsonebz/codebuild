@@ -1,1 +1,1 @@
-java -jar build/libs/dms.jar
+web: java -jar build/libs/dms.jar
